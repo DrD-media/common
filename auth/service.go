@@ -1,9 +1,10 @@
 package auth
 
 import (
-	"common/errors"
 	"os"
 	"time"
+
+	"github.com/DrD-media/common/errors"
 
 	"github.com/golang-jwt/jwt/v5"
 	"golang.org/x/crypto/bcrypt"

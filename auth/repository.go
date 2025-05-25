@@ -1,8 +1,9 @@
 package auth
 
 import (
-	"common/errors"
 	"database/sql"
+
+	"github.com/DrD-media/common/errors"
 )
 
 type UserRepositoryIMPL struct {
