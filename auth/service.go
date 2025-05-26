@@ -1,6 +1,7 @@
 package auth
 
 import (
+	"fmt"
 	"os"
 	"time"
 
@@ -89,7 +90,7 @@ func (s *UserService) generateJWT(user *User) (string, error) {
 	if err != nil {
 		return "", errors.Wrap(err, "failed to sign JWT")
 	}
-
+	fmt.Println("tokenString", tokenString)
 	return tokenString, nil
 }
 
